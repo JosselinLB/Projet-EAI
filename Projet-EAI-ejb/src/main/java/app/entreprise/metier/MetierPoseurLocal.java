@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package app.entreprise.facade;
+package app.entreprise.metier;
 
 import app.entreprise.entities.Affaire;
+import javax.ejb.Local;
+
 
 /**
  *
  * @author OscarAullo
  */
-public interface AffaireFacadeLocal {
-    void create(Affaire affaire);
-    void update(Affaire affaire);
-    Affaire find(Object id);
-    void delete(Affaire affaire);
+@Local
+public interface MetierPoseurLocal {
+    void creerRdvPoseur(Affaire affaire, String dateRdv, String heureRdv, String idEquipe);
 }

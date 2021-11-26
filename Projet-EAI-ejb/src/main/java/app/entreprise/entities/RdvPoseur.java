@@ -6,12 +6,17 @@
 package app.entreprise.entities;
 
 import java.io.Serializable;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  *
  * @author OscarAullo
  */
 public class RdvPoseur implements Serializable{
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int idRdv;
     public String dateRdv;
     public String heureRdv;
