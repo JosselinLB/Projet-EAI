@@ -24,16 +24,6 @@ public class AffaireFacade extends AbstractFacade<Affaire> implements AffaireFac
     public AffaireFacade() {
         super(Affaire.class);
     }
-
-    @Override
-    public void update(Affaire affaire) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void delete(Affaire affaire) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 
 }
